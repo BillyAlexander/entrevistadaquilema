@@ -1,6 +1,6 @@
 
 async function getlist() {
-  let url = "http://entredwin.herokuapp.com/posdated-ws/api/logerrorexcel/list";
+  let url = "https://entredwin.herokuapp.com/posdated-ws/api/logerrorexcel/list";
   try {
       let res = await fetch(url);      
       return await res.json();
