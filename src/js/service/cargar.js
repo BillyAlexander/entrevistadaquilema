@@ -1,5 +1,5 @@
 async function getCompanies() {
-    let url = "http://entredwin.herokuapp.com/posdated-ws/api/company/list";
+    let url = "https://entredwin.herokuapp.com/posdated-ws/api/company/list";
     try {
         let res = await fetch(url);
         return await res.json();
@@ -22,7 +22,7 @@ async function renderList() {
 }
 
 async function  fileUpload() { 
-    let url = "http://entredwin.herokuapp.com/posdated-ws/api/posdatedcheck/upload"; 
+    let url = "https://entredwin.herokuapp.com/posdated-ws/api/posdatedcheck/upload"; 
     let photo = document.getElementById("file_id").files[0];
     console.log(photo);
     
